@@ -1,0 +1,76 @@
+//////////////////////////////////////////////////////////
+/////// S U I T E /////// S U I T E /////// S U I T E ////
+//////////////////////////////////////////////////////////
+.topnav-svg {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark);
+    z-index: 5;
+}
+
+.small-svg {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: .6rem;
+    z-index: 5;
+}
+
+.notification {
+    font-size: 1rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-orange-1);
+    color: #fff;
+    position: absolute;
+    top: 0.1rem;
+    right: 3.7rem;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-box {
+        position: relative;
+    }
+}
+
+.drop-select-touch {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"><polygon points="0,0 100,0 50,50" style="fill: %23c10206; z-index: 5;"/></svg>');
+    background-size: 10px;
+    background-position: right 2px top 50%;
+    padding-right: 2.8rem;
+    background-repeat: no-repeat;
+    z-index: 5;
+}
+
+.menu-svg {
+    height: 6rem;
+    width: 6rem;
+    fill: #fff;
+    border-radius: 3px;
+    &-b {
+        height: 6rem;
+        width: 6rem;
+        fill: var(--color-electric-red);
+        border-radius: 3px;
+    }
+}
+
+.tag-name {
+    color: var(--color-raisin-black);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    &-b {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+//////////////////////////////////////////////////////////
+/////// DASHBOARD /////// DASHBOARD /////// DASHBOARD ////
+//////////////////////////////////////////////////////////
