@@ -1,0 +1,15 @@
+{
+    "name": "betabridgesfrontend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "betabridges.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "keywords": [
+        "Beta",
+        "Bridges"
+    ],
+    "author": "Beta Bridges",
+    "license": "ISC"
+}

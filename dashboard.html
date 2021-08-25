@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+    <script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+
+    <title>Dashboard | Beta Bridges</title>
+</head>
+
+<body>
+    <section class="suite-header">
+        <div class="suite-header__logo-box">
+            <img src="img/betaB.png" alt="Beta Bridges-logo" class="suite-header__logo">
+        </div>
+        <ul class="suite-header__nav">
+            <li class="suite-header__nav--item"><a href="#" class="suite-header__nav--link">Date</a></li>
+            <li class="suite-header__nav--item"><a href="#" class="suite-header__nav--link">Time</a></li>
+            <li class="suite-header__nav--item"><svg class="topnav-svg">
+                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg></li>
+            <li class="suite-header__nav--item"><svg class="topnav-svg">
+                    <use xlink:href="img/sprite.svg#icon-location1"></use>
+                </svg></li>
+            <li class="suite-header__nav--item">
+                <span class="drop-select-touch"><svg class="topnav-svg">
+                        <use xlink:href="img/sprite.svg#icon-cogs"></use>
+                    </svg></span>
+            </li>
+            <li class="suite-header__nav--item"><span class="drop-select-touch"><svg class="topnav-svg">
+                        <use xlink:href="img/sprite.svg#icon-g_translate"></use>
+                    </svg></span></li>
+            <li class="suite-header__nav--item notification-box"><span class="drop-select-touch"><svg
+                        class="topnav-svg">
+                        <use xlink:href="img/sprite.svg#icon-bell"></use>
+                    </svg>
+                    <span class="notification">9</span></span>
+            </li>
+            <li class="suite-header__nav--item"><a href="#" class="suite-header__nav--link"><span
+                        class="drop-select-touch"><svg class="topnav-svg">
+                            <use xlink:href="img/sprite.svg#icon-user"></use>
+                        </svg> username</span></a></li>
+        </ul>
+    </section>
+    <section class="dashboard">
+        <div class="sidebar">
+            <div class="sidebar__list">
+                <div class="sidebar__list--header">Map</div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-phone-portrait"></use>
+                        </svg><span>Devices</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/beta2.svg#icon-reload"></use>
+                        </svg><span>Replay</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-globe"></use>
+                        </svg><span>Geofences</span></a></div>
+            </div>
+            <div class="sidebar__list">
+                <div class="sidebar__list--header">Reports</div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/beta2.svg#icon-alt_route"></use>
+                        </svg><span>Route</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-automobile"></use>
+                        </svg><span>Trip</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/beta2.svg#icon-flag3"></use>
+                        </svg><span>Stops</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/beta2.svg#icon-list"></use>
+                        </svg><span>Summary</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/beta2.svg#icon-graph"></use>
+                        </svg><span>Charts</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                        </svg><span>Calendar</span></a></div>
+            </div>
+            <div class="sidebar__list">
+                <div class="sidebar__list--header">Settings</div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/beta2.svg#icon-folder"></use>
+                        </svg><span>Groups</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-user"></use>
+                        </svg><span>Drivers</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-tools"></use>
+                        </svg><span>Maintenance</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-clipboard1"></use>
+                        </svg><span>Saved Commands</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-fact_check"></use>
+                        </svg><span>Payments</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/beta2.svg#icon-server"></use>
+                        </svg><span>Computed attributes</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-bell-o"></use>
+                        </svg><span>Account Notification</span></a></div>
+            </div>
+            <div class="sidebar__list">
+                <div class="sidebar__list--header">Admin</div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/beta2.svg#icon-server"></use>
+                        </svg><span>Server</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-group"></use>
+                        </svg><span>Users</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/beta2.svg#icon-bars"></use>
+                        </svg><span>Statistics</span></a></div>
+                <div class="sidebar__list--item"><a href="#" class="sidebar__link"><svg class="sidebar__svg">
+                            <use xlink:href="img/sprite.svg#icon-clipboard"></use>
+                        </svg><span>Quotations</span></a></div>
+            </div>
+        </div>
+        <main class="main-window">
+            <div id="map" style="width: 1100px; height: 700px;"></div>
+        </main>
+    </section>
+    <div class="sidebar__btn hidden">
+
+    </div>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <script src="betabridges2.js"></script>
+</body>
+
+
+</html>
