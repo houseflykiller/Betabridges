@@ -39,7 +39,7 @@ header("Pragma: no-cache"); ?>
     <title>Dashboard | Beta Bridges</title>
 </head>
 
-<body class="dashboard-body">
+<body>
     <div class="sidebar__btn sidebar__open hidden">
         <svg class="sidebar__btn--svg">
             <use xlink:href="img/cedar.svg#icon-menu"></use>
