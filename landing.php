@@ -1,0 +1,251 @@
+<?php
+    session_start();
+ini_set("display_errors","0");
+
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+?>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
+    <title>Welcome | Beta Bridges</title>
+</head>
+
+<body>
+    <section class="suite-header">
+        <div class="suite-header__logo-box">
+            <img src="img/betaB.png" alt="Beta Bridges-logo" class="suite-header__logo">
+        </div>
+        <ul class="suite-header__nav">
+            <li class="suite-header__nav--item"><a href="#" class="suite-header__nav--link">Date</a></li>
+            <li class="suite-header__nav--item"><a href="#" class="suite-header__nav--link">Time</a></li>
+            <li class="suite-header__nav--item"><svg class="topnav-svg">
+                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg></li>
+            <li class="suite-header__nav--item"><svg class="topnav-svg">
+                    <use xlink:href="img/sprite.svg#icon-location1"></use>
+                </svg></li>
+            <li class="suite-header__nav--item">
+                <span class="drop-select-touch"><svg class="topnav-svg">
+                        <use xlink:href="img/sprite.svg#icon-cogs"></use>
+                    </svg></span>
+            </li>
+            <li class="suite-header__nav--item"><span class="drop-select-touch"><svg class="topnav-svg">
+                        <use xlink:href="img/sprite.svg#icon-g_translate"></use>
+                    </svg></span></li>
+            <li class="suite-header__nav--item notification-box"><span class="drop-select-touch"><svg
+                        class="topnav-svg">
+                        <use xlink:href="img/sprite.svg#icon-bell"></use>
+                    </svg>
+                    <span class="notification">9</span></span>
+            </li>
+            <li class="suite-header__nav--item"><a href="#" class="suite-header__nav--link"><span
+                        class="drop-select-touch"><svg class="topnav-svg">
+                            <use xlink:href="img/sprite.svg#icon-user"></use>
+                        </svg> username</span></a></li>
+        </ul>
+    </section>
+
+    <ul class="cog-modal hidden">
+        <li><svg class="small-svg">
+                <use xlink:href="img/beta2.svg#icon-folder"></use>
+            </svg> Groups</li>
+        <li>
+            <svg class="small-svg">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+            </svg> Drivers
+        </li>
+        <li><svg class="small-svg">
+                <use xlink:href="img/sprite.svg#icon-tools"></use>
+            </svg> Maintenance</li>
+        <li><svg class="small-svg">
+                <use xlink:href="img/sprite.svg#icon-clipboard1"></use>
+            </svg> Saved Card</li>
+        <li><svg class="small-svg">
+                <use xlink:href="img/sprite.svg#icon-fact_check"></use>
+            </svg> Payments</li>
+        <li><svg class="small-svg">
+                <use xlink:href="img/beta2.svg#icon-server"></use>
+            </svg> Computed Attributes</li>
+        <li><svg class="small-svg">
+                <use xlink:href="img/sprite.svg#icon-bell-o"></use>
+            </svg> Notification</li>
+    </ul>
+    <section class="center-menu">
+        <section class="menu">
+            <div class="menu-item-cell menu-item-cell-1">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="dashboard-svg-background">
+                            <svg class="menu-svg">
+                                <use xlink:href="img/sprite.svg#icon-phone-portrait"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name">devices</div>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <div class="dashboard-svg-background-b">
+                            <svg class="menu-svg-b">
+                                <use xlink:href="img/sprite.svg#icon-phone-portrait"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name-b"><a href="devices.php">devices</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-cell menu-item-cell-2">ro
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="dashboard-svg-background">
+                            <svg class="menu-svg">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name">map group</div>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <div class="dashboard-svg-background-b">
+                            <svg class="menu-svg-b">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name-b">map group</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-cell menu-item-cell-4">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="dashboard-svg-background">
+                            <svg class="menu-svg">
+                                <use xlink:href="img/sprite.svg#icon-clipboard2"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name">report</div>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <div class="dashboard-svg-background-b">
+                            <svg class="menu-svg-b">
+                                <use xlink:href="img/sprite.svg#icon-clipboard2"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name-b">report</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-cell menu-item-cell-5">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="dashboard-svg-background">
+                            <svg class="menu-svg">
+                                <use xlink:href="img/sprite.svg#icon-board"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name">drivers</div>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <div class="dashboard-svg-background-b">
+                            <svg class="menu-svg-b">
+                                <use xlink:href="img/sprite.svg#icon-board"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name-b">drivers</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-cell menu-item-cell-6">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="dashboard-svg-background">
+                            <svg class="menu-svg">
+                                <use xlink:href="img/sprite.svg#icon-vpn_lock"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name">geofences</div>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <div class="dashboard-svg-background-b">
+                            <svg class="menu-svg-b">
+                                <use xlink:href="img/sprite.svg#icon-vpn_lock"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name-b">geofences</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-cell menu-item-cell-8">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="dashboard-svg-background">
+                            <svg class="menu-svg">
+                                <use xlink:href="img/sprite.svg#icon-handyman"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name">maintenance units</div>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <div class="dashboard-svg-background-b">
+                            <svg class="menu-svg-b">
+                                <use xlink:href="img/sprite.svg#icon-handyman"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name-b">maintenance units</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-cell menu-item-cell-9">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="dashboard-svg-background">
+                            <svg class="menu-svg">
+                                <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name">payments</div>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <div class="dashboard-svg-background-b">
+                            <svg class="menu-svg-b">
+                                <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name-b">payments</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-cell menu-item-cell-10">
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="dashboard-svg-background">
+                            <svg class="menu-svg">
+                                <use xlink:href="img/sprite.svg#icon-lock"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name">change password</div>
+                    </div>
+                    <div class="card__side card__side--back">
+                        <div class="dashboard-svg-background-b">
+                            <svg class="menu-svg-b">
+                                <use xlink:href="img/sprite.svg#icon-lock"></use>
+                            </svg>
+                        </div>
+                        <div class="tag-name-b">change password</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="overlay hidden">
+        &nbsp;
+    </div>
+    <script src="betabridges.js"></script>
+</body>
+
+</html>

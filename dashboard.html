@@ -10,12 +10,24 @@
     <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
     <script type='text/javascript' src='http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js'></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="">
 
     <title>Dashboard | Beta Bridges</title>
 </head>
 
-<body>
+<body class="dashboard-body">
+    <div class="sidebar__btn sidebar__open hidden">
+        <svg class="sidebar__btn--svg">
+            <use xlink:href="img/cedar.svg#icon-menu"></use>
+        </svg>
+    </div>
+    <div class="sidebar__btn sidebar__close">
+        <svg class="sidebar__btn--svg">
+            <use xlink:href="img/cedar.svg#icon-cross"></use>
+        </svg>
+    </div>
     <section class="suite-header">
         <div class="suite-header__logo-box">
             <img src="img/betaB.png" alt="Beta Bridges-logo" class="suite-header__logo">
@@ -23,9 +35,10 @@
         <ul class="suite-header__nav">
             <li class="suite-header__nav--item"><a href="#" class="suite-header__nav--link">Date</a></li>
             <li class="suite-header__nav--item"><a href="#" class="suite-header__nav--link">Time</a></li>
-            <li class="suite-header__nav--item"><svg class="topnav-svg">
-                    <use xlink:href="img/sprite.svg#icon-home"></use>
-                </svg></li>
+            <li class="suite-header__nav--item"><a href="landing.html" class="suite-header__nav--link"><svg
+                        class="topnav-svg">
+                        <use xlink:href="img/sprite.svg#icon-home"></use>
+                    </svg></a></li>
             <li class="suite-header__nav--item"><svg class="topnav-svg">
                     <use xlink:href="img/sprite.svg#icon-location1"></use>
                 </svg></li>
@@ -125,13 +138,15 @@
             </div>
         </div>
         <main class="main-window">
-            <div id="map" style="width: 1100px; height: 700px;"></div>
+            <div id="map" class="map"></div>
         </main>
     </section>
     <div class="sidebar__btn hidden">
 
     </div>
-    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
     <script src="betabridges2.js"></script>
 </body>
 

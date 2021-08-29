@@ -1,0 +1,21 @@
+.background-holder {
+    background-image: url(../img/dashboard-7.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    height: 125vh;
+}
+
+.fe-brown {
+    background-color: brown;
+    flex-basis: 1%;
+}
+
+.form-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+    margin-top: 6rem;
+}

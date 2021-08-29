@@ -1,15 +1,14 @@
 {
-    "name": "betabridgesfrontend",
-    "version": "1.0.0",
-    "description": "",
-    "main": "betabridges.js",
-    "scripts": {
-        "compile:sass": "node-sass sass/main.scss css/style.css -w"
-    },
-    "keywords": [
-        "Beta",
-        "Bridges"
-    ],
-    "author": "Beta Bridges",
-    "license": "ISC"
+  "name": "betatraccar",
+  "version": "1.0.0",
+  "description": "traccar for beta bridges",
+  "main": "betabridges.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Cujo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
 }
